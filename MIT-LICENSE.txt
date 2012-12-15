@@ -1,0 +1,4 @@
+Copyright 2012 snail Foundation and other contributors,
+http://www.node.com/
+http://snaul-ui.googlecode.com/svn/
+
