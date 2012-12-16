@@ -1,0 +1,11 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+.sn-accordion .sn-accordion-header { display: block; cursor: pointer; position: relative; margin-top: 2px; padding: .5em .5em .5em .7em; zoom: 1; }
+.sn-accordion .sn-accordion-icons { padding-left: 2.2em; }
+.sn-accordion .sn-accordion-noicons { padding-left: .7em; }
+.sn-accordion .sn-accordion-icons .sn-accordion-icons { padding-left: 2.2em; }
+.sn-accordion .sn-accordion-header .sn-accordion-header-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+.sn-accordion .sn-accordion-content { padding: 1em 2.2em; border-top: 0; overflow: auto; zoom: 1; }

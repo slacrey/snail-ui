@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Comno - Default functionality</title>
+    <link rel="stylesheet" href="../../themes/redmond/snail.ui.all.css">
+    <script src="../../jquery-1.8.3.js"></script>
+    <script src="../../ui/snail.ui.core.js"></script>
+    <script src="../../ui/snail.ui.widget.js"></script>
+    <script src="../../ui/snail.ui.position.js"></script>
+    <script src="../../ui/snail.ui.combo.js"></script>
+    <script src="../../ui/snail.ui.button.js"></script>
+    <link rel="stylesheet" href="../demos.css">
+    <script>
+//        $("#comboText").combo();
+        $( "button" )
+                .button()
+                .click(function( event ) {
+                    event.preventDefault();
+                });
+    </script>
+</head>
+<body>
+<button>A button element</button>
+<br>
+<input type="text" name="comboText" id="comboText" />
+<!--<span class="sn-widget sn-combo sn-widget-content sn-corner-all">-->
+    <!--<input id="combo" style="width: 180px" class="sn-combo-input sn-corner-left" autocomplete="off" />-->
+    <!--<a class="sn-combo-button sn-combo-down sn-corner-br sn-button sn-state-default sn-button-text-only" tabindex="-1" role="button">-->
+        <!--<span class="sn-button-text">-->
+            <!--<span class="sn-icon sn-icon-triangle-1-s">down</span>-->
+        <!--</span>-->
+     <!--</a>-->
+<!--</span>-->
+
+<div id="drop-list" style="width: 200px; height: 110px;" class="sn-widget sn-widget-content sn-corner-all sn-helper-reset">
+    <div class="sn-droplist" style="display: block;overflow-y: auto;padding: 0;height: 110px;">
+        <div class="sn-droplist-item"><a href="#" class="sn-corner-all sn-state-disabled" tabindex="-1" role="menuitem">Item 1</a></div>
+        <div class="sn-droplist-item"><a href="#" class="sn-corner-all sn-state-active" tabindex="-1" role="menuitem">Item 1</a></div>
+        <div class="sn-droplist-item"><a href="#" class="sn-corner-all sn-state-active" tabindex="-1" role="menuitem">Item 1</a></div>
+        <div class="sn-droplist-item"><a href="#" class="sn-corner-all sn-state-active" tabindex="-1" role="menuitem">Item 1</a></div>
+        <div class="sn-droplist-item"><a href="#" class="sn-corner-all sn-state-focus" tabindex="-1" role="menuitem">Item 2</a></div>
+    </div>
+</div>
+<!--<ul id="menu" style="width:202px;" class="sn-menu sn-widget sn-widget-content sn-corner-all" role="menu" tabindex="0" aria-activedescendant="sn-id-10">-->
+    <!--<li class="sn-droplist-item" role="presentation"><a href="#" id="sn-id-9" class="sn-corner-all" tabindex="-1" role="menuitem">Item 1</a></li>-->
+    <!--<li class="sn-droplist-item" role="presentation"><a href="#" id="sn-id-10" class="sn-corner-all sn-state-focus" tabindex="-1" role="menuitem">Item 2</a></li>-->
+    <!--<li class="sn-droplist-item" role="presentation"><a href="#" id="sn-id-12" class="sn-corner-all" tabindex="-1" role="menuitem">Item 4</a></li>-->
+    <!--<li class="sn-droplist-item" role="presentation"><a href="#" id="sn-id-13" class="sn-corner-all" tabindex="-1" role="menuitem">Item 5</a></li>-->
+<!--</ul>-->
+</body>
+</html>

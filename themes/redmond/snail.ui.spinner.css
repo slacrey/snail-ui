@@ -1,0 +1,18 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+.sn-spinner { position:relative; display: inline-block; overflow: hidden; padding: 0; vertical-align: middle; }
+.sn-spinner-input { border: none; background: none; padding: 0; margin: .2em 0; vertical-align: middle; margin-left: .4em; margin-right: 22px; }
+.sn-spinner-button { width: 16px; height: 50%; font-size: .5em; padding: 0; margin: 0; text-align: center; position: absolute; cursor: default; display: block; overflow: hidden; right: 0; }
+.sn-spinner a.sn-spinner-button { border-top: none; border-bottom: none; border-right: none; } /* more specificity required here to overide default borders */
+.sn-spinner .sn-icon { position: absolute; margin-top: -8px; top: 50%; left: 0; } /* vertical centre icon */
+.sn-spinner-up { top: 0; }
+.sn-spinner-down { bottom: 0; }
+
+/* TR overrides */
+.sn-spinner .sn-icon-triangle-1-s {
+	/* need to fix icons sprite */
+	background-position:-65px -16px;
+}

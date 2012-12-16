@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Button - Default functionality</title>
+    <link rel="stylesheet" href="../../themes/redmond/snail.ui.all.css">
+    <script src="../../jquery-1.8.3.js"></script>
+    <script src="../../ui/snail.ui.core.js"></script>
+    <script src="../../ui/snail.ui.widget.js"></script>
+    <script src="../../ui/snail.ui.position.js"></script>
+    <script src="../../ui/snail.ui.combo.js"></script>
+    <link rel="stylesheet" href="../demos.css">
+    <script>
+        $(function () {
+//            $("#comboText").combo({
+//                dataSource:[
+//                    {code:'0755', name:'深圳', type:'市'},
+//                    {code:'010', name:'北京', type:'直辖市'},
+//                    {code:'021', name:'上海', type:'直辖市'},
+//                    {code:'0473', name:'乌海', type:'市'},
+//                    {code:'027', name:'武汉', type:'市'},
+//                    {code:'0935', name:'武威', type:'市'},
+//                    {code:'029', name:'西安', type:'市'},
+//                    {code:'020', name:'广州', type:'市'},
+//                    {code:'0753', name:'梅州', type:'市'},
+//                    {code:'0768', name:'潮州', type:'市'},
+//                    {code:'0728', name:'天门', type:'市'},
+//                    {code:'022', name:'天津', type:'直辖市'}
+//                ],
+//                valueField:'code',
+//                inputField:'name',
+//                multi:false,
+//                value:'027',
+//                optionField:function (data, index) {
+//                    return data.name;
+//                }
+//            });
+            $("#comboText").combo({
+                dataSource:[
+                    {value:'0755', text:'深圳'},
+                    {value:'010', text:'北京'},
+                    {value:'021', text:'上海'},
+                    {value:'0473', text:'乌海'},
+                    {value:'027', text:'武汉'},
+                    {value:'0935', text:'武威'},
+                    {value:'029', text:'西安'},
+                    {value:'020', text:'广州'},
+                    {value:'0753', text:'梅州'},
+                    {value:'0768', text:'潮州'},
+                    {value:'0728', text:'天门'},
+                    {value:'022', text:'天津'}
+                ],
+                multi:true,
+                value:'027'
+            });
+        });
+        var getValue = function(){
+            alert($("#comboText").combo('value'));
+        };
+    </script>
+</head>
+<body>
+
+
+<input type="submit" value="A submit button" onclick="getValue()">
+<br>
+<input type="text" style="width: 180px" name="comboText" id="comboText"/>
+
+<div class="demo-description">
+    <p>Examples of the markup that can be used for buttons: A button element, an input of type submit and an anchor.</p>
+</div>
+<div id="drop-list" class="sn-widget sn-helper-reset">
+
+</div>
+
+
+</body>
+</html>

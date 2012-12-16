@@ -1,0 +1,13 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+.sn-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.sn-tabs .sn-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.sn-tabs .sn-tabs-nav li { list-style: none; float: left; position: relative; top: 0; margin: 1px .2em 0 0; border-bottom: 0; padding: 0; white-space: nowrap; }
+.sn-tabs .sn-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.sn-tabs .sn-tabs-nav li.sn-tabs-active { margin-bottom: -1px; padding-bottom: 1px; }
+.sn-tabs .sn-tabs-nav li.sn-tabs-active a, .sn-tabs .sn-tabs-nav li.sn-state-disabled a, .sn-tabs .sn-tabs-nav li.sn-tabs-loading a { cursor: text; }
+.sn-tabs .sn-tabs-nav li a, .sn-tabs-collapsible .sn-tabs-nav li.sn-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.sn-tabs .sn-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }

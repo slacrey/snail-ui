@@ -1,0 +1,20 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ *
+ */
+.sn-slider { position: relative; text-align: left; }
+.sn-slider .sn-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.sn-slider .sn-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+.sn-slider-horizontal { height: .8em; }
+.sn-slider-horizontal .sn-slider-handle { top: -.3em; margin-left: -.6em; }
+.sn-slider-horizontal .sn-slider-range { top: 0; height: 100%; }
+.sn-slider-horizontal .sn-slider-range-min { left: 0; }
+.sn-slider-horizontal .sn-slider-range-max { right: 0; }
+
+.sn-slider-vertical { width: .8em; height: 100px; }
+.sn-slider-vertical .sn-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.sn-slider-vertical .sn-slider-range { left: 0; width: 100%; }
+.sn-slider-vertical .sn-slider-range-min { bottom: 0; }
+.sn-slider-vertical .sn-slider-range-max { top: 0; }

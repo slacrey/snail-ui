@@ -1,0 +1,25 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+.sn-menu { list-style:none; padding: 2px; margin: 0; display:block; outline: none; }
+.sn-menu .sn-menu { margin-top: -3px; position: absolute; }
+.sn-menu .sn-menu-item { margin: 0; padding: 0; zoom: 1; width: 100%; }
+.sn-menu .sn-menu-divider { margin: 5px -2px 5px -2px; height: 0; font-size: 0; line-height: 0; border-width: 1px 0 0 0; }
+.sn-menu .sn-menu-item a { text-decoration: none; display: block; padding: 2px .4em; line-height: 1.5; zoom: 1; font-weight: normal; }
+.sn-menu .sn-menu-item a.sn-state-focus,
+.sn-menu .sn-menu-item a.sn-state-active { font-weight: normal; margin: -1px; }
+
+.sn-menu .sn-state-disabled { font-weight: normal; margin: .4em 0 .2em; line-height: 1.5; }
+.sn-menu .sn-state-disabled a { cursor: default; }
+
+/* icon support */
+.sn-menu-icons { position: relative; }
+.sn-menu-icons .sn-menu-item a { position: relative; padding-left: 2em; }
+
+/* left-aligned */
+.sn-menu .sn-icon { position: absolute; top: .2em; left: .2em; }
+
+/* right-aligned */
+.sn-menu .sn-menu-icon { position: static; float: right; }

@@ -1,0 +1,8 @@
+/*!
+ * Snail UI CSS Framework @VERSION
+ */
+@import url("snail.ui.core.css");
+
+@import url("snail.ui.button.css");
+@import url("snail.ui.resizable.css");
+@import url("snail.ui.selectable.css");

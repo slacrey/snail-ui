@@ -1,0 +1,21 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+@import url("snail.ui.css");
+@import url("snail.ui.core.css");
+@import url("snail.ui.accordion.css");
+@import url("snail.ui.autocomplete.css");
+@import url("snail.ui.button.css");
+@import url("snail.ui.datepicker.css");
+@import url("snail.ui.dialog.css");
+@import url("snail.ui.menu.css");
+@import url("snail.ui.progressbar.css");
+@import url("snail.ui.resizable.css");
+@import url("snail.ui.selectable.css");
+@import url("snail.ui.slider.css");
+@import url("snail.ui.spinner.css");
+@import url("snail.ui.combo.css");
+@import url("snail.ui.tabs.css");
+@import url("snail.ui.tooltip.css");

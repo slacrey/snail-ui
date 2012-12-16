@@ -1,0 +1,107 @@
+/*!
+ * Snail UI Button @VERSION
+ */
+.sn-button {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	overflow: visible; /* removes extra width in IE */
+}
+.sn-button,
+.sn-button:link,
+.sn-button:visited,
+.sn-button:hover,
+.sn-button:active {
+	text-decoration: none;
+}
+/* to make room for the icon, a width needs to be set here */
+.sn-button-icon-only {
+	width: 2.2em;
+}
+/* button elements seem to need a little more width */
+button.sn-button-icon-only {
+	width: 2.4em;
+}
+.sn-button-icons-only {
+	width: 3.4em;
+}
+button.sn-button-icons-only {
+	width: 3.7em;
+}
+
+/* button text element */
+.sn-button .sn-button-text {
+	display: block;
+	line-height: normal;
+}
+.sn-button-text-only .sn-button-text {
+	padding: .4em 1em;
+}
+.sn-button-icon-only .sn-button-text,
+.sn-button-icons-only .sn-button-text {
+	padding: .4em;
+	text-indent: -9999999px;
+}
+.sn-button-text-icon-primary .sn-button-text,
+.sn-button-text-icons .sn-button-text {
+	padding: .4em 1em .4em 2.1em;
+}
+.sn-button-text-icon-secondary .sn-button-text,
+.sn-button-text-icons .sn-button-text {
+	padding: .4em 2.1em .4em 1em;
+}
+.sn-button-text-icons .sn-button-text {
+	padding-left: 2.1em;
+	padding-right: 2.1em;
+}
+/* no icon support for input elements, provide padding by default */
+input.sn-button {
+	padding: .4em 1em;
+}
+
+/* button icon element(s) */
+.sn-button-icon-only .sn-icon,
+.sn-button-text-icon-primary .sn-icon,
+.sn-button-text-icon-secondary .sn-icon,
+.sn-button-text-icons .sn-icon,
+.sn-button-icons-only .sn-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+}
+.sn-button-icon-only .sn-icon {
+	left: 50%;
+	margin-left: -8px;
+}
+.sn-button-text-icon-primary .sn-button-icon-primary,
+.sn-button-text-icons .sn-button-icon-primary,
+.sn-button-icons-only .sn-button-icon-primary {
+	left: .5em;
+}
+.sn-button-text-icon-secondary .sn-button-icon-secondary,
+.sn-button-text-icons .sn-button-icon-secondary,
+.sn-button-icons-only .sn-button-icon-secondary {
+	right: .5em;
+}
+
+/* button sets */
+.sn-buttonset {
+	margin-right: 7px;
+}
+.sn-buttonset .sn-button {
+	margin-left: 0;
+	margin-right: -.3em;
+}
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+input.sn-button::-moz-focus-inner,
+button.sn-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}

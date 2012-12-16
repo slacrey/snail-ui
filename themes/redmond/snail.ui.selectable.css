@@ -1,0 +1,6 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+.sn-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }

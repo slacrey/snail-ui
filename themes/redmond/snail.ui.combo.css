@@ -1,0 +1,41 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+.sn-combo { position:relative; display: inline-block; overflow: hidden; padding: 0; vertical-align: middle; }
+.sn-combo-input { border: none; background: none; padding: 0; margin: .2em 0; vertical-align: middle; margin-left: .4em; margin-right: 22px; }
+.sn-combo-button { width: 16px; height: 100%; font-size: .5em; padding: 0; margin: 0; text-align: center; position: absolute; cursor: default; display: block; overflow: hidden; right: 0; }
+.sn-combo a.sn-combo-button { border-top: none; border-bottom: none; border-right: none; } /* more specificity required here to overide default borders */
+.sn-combo .sn-icon { position: absolute; margin-top: -8px; top: 50%; left: 0; } /* vertical centre icon */
+.sn-combo-down { top: 0; cursor: pointer;}
+.sn-empty-text{ color: #CCCCCC; }
+
+/* TR overrides */
+.sn-combo .sn-icon-triangle-1-s {
+	/* need to fix icons sprite */
+	background-position:-65px -16px;
+}
+.sn-widget .sn-droplist {overflow-x: hidden;}
+
+.sn-droplist { list-style:none; padding: 2px; margin: 0; display:block; outline: none; }
+.sn-droplist .sn-droplist { margin-top: -3px; position: absolute; }
+.sn-droplist .sn-droplist-item { margin: 0; padding: 0; zoom: 1; width: 100%; }
+.sn-droplist .sn-droplist-divider { margin: 5px -2px 5px -2px; height: 0; font-size: 0; line-height: 0; border-width: 1px 0 0 0; }
+.sn-droplist .sn-droplist-item a { text-decoration: none; display: block; padding: 2px .4em; line-height: 1.5; zoom: 1; font-weight: normal; }
+.sn-droplist .sn-droplist-item a.sn-state-focus,
+.sn-droplist .sn-droplist-item a.sn-state-active { font-weight: normal; margin: -1px; }
+
+.sn-droplist .sn-state-disabled { font-weight: normal; margin: .4em 0 .2em; line-height: 1.5; }
+.sn-droplist .sn-state-disabled a { cursor: default; }
+
+/* icon support */
+.sn-droplist-icons { position: relative; }
+.sn-droplist-icons .sn-droplist-item a { position: relative; padding-left: 2em; }
+
+/* left-aligned */
+.sn-droplist .sn-icon { position: absolute; top: .2em; left: .2em; }
+
+/* right-aligned */
+.sn-droplist .sn-droplist-icon { position: static; float: right; }
+

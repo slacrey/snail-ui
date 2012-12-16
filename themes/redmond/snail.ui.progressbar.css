@@ -1,0 +1,7 @@
+/*!
+ * Snail UI CSS Framework 1.9.2
+ * http://www.snailui.com
+ * author: roy.lyn
+ */
+.sn-progressbar { height:2em; text-align: left; overflow: hidden; }
+.sn-progressbar .sn-progressbar-value {margin: -1px; height:100%; }
