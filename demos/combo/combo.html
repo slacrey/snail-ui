@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../demos.css">
     <script>
         $(function () {
-//            $("#comboText").combo({
+//            $("#comboText").snCombo({
 //                dataSource:[
 //                    {code:'0755', name:'深圳', type:'市'},
 //                    {code:'010', name:'北京', type:'直辖市'},
@@ -35,37 +35,26 @@
 //                    return data.name;
 //                }
 //            });
-            $("#comboText").combo({
-                dataSource:[
-                    {value:'0755', text:'深圳'},
-                    {value:'010', text:'北京'},
-                    {value:'021', text:'上海'},
-                    {value:'0473', text:'乌海'},
-                    {value:'027', text:'武汉'},
-                    {value:'0935', text:'武威'},
-                    {value:'029', text:'西安'},
-                    {value:'020', text:'广州'},
-                    {value:'0753', text:'梅州'},
-                    {value:'0768', text:'潮州'},
-                    {value:'0728', text:'天门'},
-                    {value:'022', text:'天津'}
-                ],
+            $("#comboText").snCombo({
+                dataSource:'./sncombo.json',
                 multi:true,
-                value:'027'
+                value:'002'
             });
         });
         var getValue = function(){
-            alert($("#comboText").combo('value'));
+            alert($("#comboText").snCombo('value'));
         };
     </script>
 </head>
 <body>
 
-
 <input type="submit" value="A submit button" onclick="getValue()">
 <br>
 <input type="text" style="width: 180px" name="comboText" id="comboText"/>
-
+<br>
+<select id="s2" name="asd">
+    <option value="sd">asd</option>
+</select>
 <div class="demo-description">
     <p>Examples of the markup that can be used for buttons: A button element, an input of type submit and an anchor.</p>
 </div>

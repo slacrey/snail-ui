@@ -1,13 +1,42 @@
 {
-  "name": "jquery-plugin",
-  "version": "0.0.0-ignored",
-  "engines": {
-    "node": ">= 0.6.0"
-  },
-  "scripts": {
-    "test": "grunt qunit"
-  },
-  "devDependencies": {
-    "grunt": "~0.3.17"
-  }
+	"name": "snail-ui",
+	"title": "Snail UI",
+	"description": "Snail UI of jQuery UI",
+	"version": "0.1.0",
+	"homepage": "https://github.com/slacrey/snail-ui",
+	"engines": {
+		"node": ">= 0.6.0"
+	},
+	"scripts": {
+		"test": "grunt qunit"
+	},
+	"author": {
+		"name": "linfeng",
+		"email": "scstlinfeng@yahoo.cn"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/slacrey/snail-ui.git"
+	},
+	"bugs": {
+		"url": "https://github.com/slacrey/snail-ui/issues"
+	},
+	"licenses": [{
+		"type": "MIT",
+		"url": "https://github.com/slacrey/snail-ui/blob/master/LICENSE-MIT"
+	}],
+	"dependencies": {
+		"jquery": "1.6.3"
+	},
+	"devDependencies": {
+		"grunt": "~0.3.17",
+		"grunt-css": "0.2.0",
+		"grunt-compare-size": "0.1.4",
+		"grunt-html": "0.1.1",
+		"grunt-junit": "0.1.5",
+		"grunt-git-authors": "1.0.0",
+		"rimraf": "2.0.1",
+		"testswarm": "0.3.0"
+	},
+	"keywords": []
 }

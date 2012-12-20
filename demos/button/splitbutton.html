@@ -3,29 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<title>jQuery UI Button - Split button</title>
-	<link rel="stylesheet" href="../../themes/base/jquery.ui.all.css">
+    <link rel="stylesheet" href="../../themes/redmond/snail.ui.all.css">
 	<script src="../../jquery-1.8.3.js"></script>
-	<script src="../../ui/jquery.ui.core.js"></script>
-	<script src="../../ui/jquery.ui.widget.js"></script>
-	<script src="../../ui/jquery.ui.button.js"></script>
-	<script src="../../ui/jquery.ui.position.js"></script>
-	<script src="../../ui/jquery.ui.menu.js"></script>
+	<script src="../../ui/snail.ui.core.js"></script>
+	<script src="../../ui/snail.ui.widget.js"></script>
+	<script src="../../ui/snail.ui.button.js"></script>
+	<script src="../../ui/snail.ui.position.js"></script>
+	<script src="../../ui/snail.ui.menu.js"></script>
 	<link rel="stylesheet" href="../demos.css">
 	<style>
-		.ui-menu { position: absolute; width: 100px; }
+		.sn-menu { position: absolute; width: 100px; }
 	</style>
 	<script>
 	$(function() {
 		$( "#rerun" )
-			.button()
+			.snButton()
 			.click(function() {
 				alert( "Running the last action" );
 			})
 			.next()
-				.button({
+				.snButton({
 					text: false,
 					icons: {
-						primary: "ui-icon-triangle-1-s"
+						primary: "sn-icon-triangle-1-s"
 					}
 				})
 				.click(function() {
@@ -40,10 +40,10 @@
 					return false;
 				})
 				.parent()
-					.buttonset()
+					.snButtonSet()
 					.next()
 						.hide()
-						.menu();
+						.snMenu();
 	});
 	</script>
 </head>

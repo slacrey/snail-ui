@@ -20,13 +20,13 @@
 	}
 	</style>
 	<script>
-	$.widget( "custom.catcomplete", $.ui.autocomplete, {
+	$.widget( "custom.catcomplete", $.sn.snAutocomplete, {
 		_renderMenu: function( ul, items ) {
 			var that = this,
 				currentCategory = "";
 			$.each( items, function( index, item ) {
 				if ( item.category != currentCategory ) {
-					ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+					ul.append( "<li class='sn-autocomplete-category'>" + item.category + "</li>" );
 					currentCategory = item.category;
 				}
 				that._renderItemData( ul, item );
