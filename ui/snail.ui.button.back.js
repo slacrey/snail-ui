@@ -12,9 +12,9 @@ var lastActive, startXPos, startYPos, clickDragged,
 	stateClasses = "sn-state-hover sn-state-active ",
 	typeClasses = "sn-button-icons-only sn-button-icon-only sn-button-text-icons sn-button-text-icon-primary sn-button-text-icon-secondary sn-button-text-only",
 	formResetHandler = function() {
-		var buttons = $( this ).find( ":sn-snButton" );
+		var buttons = $( this ).find( ":sn-button" );
 		setTimeout(function() {
-			buttons.snButton( "refresh" );
+			buttons.button( "refresh" );
 		}, 1 );
 	},
 	radioGroup = function( radio ) {
@@ -35,7 +35,7 @@ var lastActive, startXPos, startYPos, clickDragged,
 		return radios;
 	};
 
-$.widget( "sn.snButton", {
+$.widget( "sn.button", {
 	version: "@VERSION",
 	defaultElement: "<button>",
 	options: {
@@ -153,7 +153,7 @@ $.widget( "sn.snButton", {
 				radioGroup( radio )
 					.not( radio )
 					.map(function() {
-						return $( this ).snButton( "widget" )[ 0 ];
+						return $( this ).button( "widget" )[ 0 ];
 					})
 					.removeClass( "sn-state-active" )
 					.attr( "aria-pressed", "false" );
@@ -286,11 +286,11 @@ $.widget( "sn.snButton", {
 		if ( this.type === "radio" ) {
 			radioGroup( this.element[0] ).each(function() {
 				if ( $( this ).is( ":checked" ) ) {
-					$( this ).snButton( "widget" )
+					$( this ).button( "widget" )
 						.addClass( "sn-state-active" )
 						.attr( "aria-pressed", "true" );
 				} else {
-					$( this ).snButton( "widget" )
+					$( this ).button( "widget" )
 						.removeClass( "sn-state-active" )
 						.attr( "aria-pressed", "false" );
 				}
@@ -352,7 +352,7 @@ $.widget( "sn.snButton", {
 	}
 });
 
-$.widget( "sn.snButtonSet", {
+$.widget( "sn.buttonset", {
 	version: "@VERSION",
 	options: {
 		items: "button, input[type=button], input[type=submit], input[type=reset], input[type=checkbox], input[type=radio], a, :data(sn-button)"
@@ -368,7 +368,7 @@ $.widget( "sn.snButtonSet", {
 
 	_setOption: function( key, value ) {
 		if ( key === "disabled" ) {
-			this.buttons.snButton( "option", key, value );
+			this.buttons.button( "option", key, value );
 		}
 
 		this._super( key, value );
@@ -378,14 +378,14 @@ $.widget( "sn.snButtonSet", {
 		var rtl = this.element.css( "direction" ) === "rtl";
 
 		this.buttons = this.element.find( this.options.items )
-			.filter( ":sn-snButton" )
-				.snButton( "refresh" )
+			.filter( ":sn-button" )
+				.button( "refresh" )
 			.end()
-			.not( ":sn-snButton" )
-				.snButton()
+			.not( ":sn-button" )
+				.button()
 			.end()
 			.map(function() {
-				return $( this ).snButton( "widget" )[ 0 ];
+				return $( this ).button( "widget" )[ 0 ];
 			})
 				.removeClass( "sn-corner-all sn-corner-left sn-corner-right" )
 				.filter( ":first" )
@@ -401,11 +401,11 @@ $.widget( "sn.snButtonSet", {
 		this.element.removeClass( "sn-buttonset" );
 		this.buttons
 			.map(function() {
-				return $( this ).snButton( "widget" )[ 0 ];
+				return $( this ).button( "widget" )[ 0 ];
 			})
 				.removeClass( "sn-corner-left sn-corner-right" )
 			.end()
-			.snButton( "destroy" );
+			.button( "destroy" );
 	}
 });
 

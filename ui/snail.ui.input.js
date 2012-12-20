@@ -18,7 +18,7 @@
         refreshButton:'sn-icon-refresh'
     }
 
-    $.widget("sn.snCombo", {
+    $.widget("sn.snInput", {
         version:"@VERSION",
         options:{
             listAutoWidth:true,
@@ -36,44 +36,20 @@
             dataSource:null
         },
         _create:function () {
-            var valueEl = this.element,
-                htmlButton = '<a class="sn-combo-button sn-combo-down sn-corner-br sn-button sn-state-default sn-button-text-only" tabindex="-1" role="button">'
-                    + '<span class="sn-button-text"><span id="sn-down-button" class="sn-icon sn-icon-triangle-1-s">down</span></span></a>';
-            var span = $('<span class="sn-combo sn-widget sn-widget-content sn-corner-all"></span>').insertAfter(valueEl).wrapInner(valueEl);
-            this.textInput = valueEl.clone().removeAttr("id").removeAttr("name").addClass("sn-combo-input sn-corner-left").appendTo(span);
-            this.expandTrigger = $(htmlButton).appendTo(span);
-            valueEl.hide();
-            this.downButton = $("#sn-down-button");
-            this.dropList = $($('<div id="drop-list" class="sn-widget sn-widget-content sn-corner-all sn-helper-reset"><div class="sn-droplist"></div></div>').css({position:'absolute', zIndex:2000}).appendTo(document.body).children()[0]).hide();
-            this.dropList.css({
-                'display':'block'
+            this._on( this.element, {
+                input:function(){
+                    alert(11);
+                }
             });
-            this.dropListContainer = this.dropList.parent();
-            this.dropListContainer.hide();
         },
 
         _init:function () {
-            var self = this, options = self.options,
-                valueEl = self.element, inputEl = self.textInput;
 
-            self._refeshEmptyText(options.emptyText);
-            self.dataHasLoaded = false;
-            options.disabled ? inputEl.attr('disabled', true) : inputEl.removeAttr('disabled');
-            options.readOnly ? inputEl.attr('readonly', 'readOnly') : inputEl.removeAttr('readonly');
-
-            self._initCombo();
-
-            var unusable = options.disabled;
-            if (unusable) {
-                self.expandTrigger.addClass('sn-state-disabled');
-            } else {
-                self._bindEvent();
-            }
 
         },
 
         widget:function () {
-            return this.textInput;
+            return this.element;
         },
 
         _destroy:function () {

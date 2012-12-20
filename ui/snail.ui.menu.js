@@ -12,7 +12,7 @@
 
 var mouseHandled = false;
 
-$.widget( "sn.menu", {
+$.widget( "sn.snMenu", {
 	version: "@VERSION",
 	defaultElement: "<ul>",
 	delay: 300,
